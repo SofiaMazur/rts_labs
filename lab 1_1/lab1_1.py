@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt  # lib for graphs
 import numpy as np  # lib for math operations
 
 # constants
-n = 12  # number of harmonics
-w = 2700  # max frequency
-N = 64  # number of descrete calls
+n = 6  # number of harmonics
+w = 2100  # max frequency
+N = 1024  # number of descrete calls
 
 # function for calculating random signal
 def formula(a, w, t, phi):
