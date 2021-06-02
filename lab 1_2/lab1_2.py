@@ -59,7 +59,6 @@ print('Dx:', np.var(signals))  # Dispersion
 
 # plotting
 
-# signals
 plt.plot(signals)
 plt.plot(signals_copy)
 plt.xlabel('time')
@@ -67,14 +66,12 @@ plt.ylabel('x')
 plt.title('Random generated signals 1, 2')
 plt.figure()
 
-# cross-correlation
 plt.plot(correlation(signals, signals_copy)) # call function with two arguments
 plt.xlabel('time')
 plt.ylabel('correlation')
 plt.title('cross-correlation')
 plt.figure()
 
-# autocorrelation
 plt.plot(correlation(signals))  # call function with one argument
 plt.xlabel('time')
 plt.ylabel('correlation')
