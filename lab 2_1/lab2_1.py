@@ -55,14 +55,12 @@ signals = generateSignals(n, w, N)
 
 # plotting
 
-# signals
 plt.plot(signals)
 plt.xlabel('time')
 plt.ylabel('x')
 plt.title('Random generated signal')
 plt.figure()
-
-# dft 
+ 
 plt.plot(dft(signals))
 plt.xlabel('p')
 plt.ylabel('F(p)')
