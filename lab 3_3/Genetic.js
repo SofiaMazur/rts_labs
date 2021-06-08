@@ -33,6 +33,7 @@ class Chromosome {
 }
 
 class Genetic {
+    var mutationChance: Int = 0
     population = []
     constructor(task, target) {
         const { length } = task
@@ -73,7 +74,14 @@ class Genetic {
         }
 
         this.population = children
+        
+        val rand: Int = (1..100).random()
+                if (rand < mutationChance){
+                    populationOfChild[0][0]++
+       
     }
 }
+
+mutationChance = input_chance.text.toString().toInt()
 
 export default Genetic;
