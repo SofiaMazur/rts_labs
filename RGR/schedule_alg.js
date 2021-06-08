@@ -1,4 +1,4 @@
-const { SchedulingAlgorithm } = require('./SchedulingCore');
+const { SchedulingAlgorithm } = require('./schedule_core');
 
 class FIFO extends SchedulingAlgorithm {
   distribute = () => {
