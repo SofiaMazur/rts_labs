@@ -9,6 +9,8 @@ export default function App() {
     if (n % 2 == 0)
       return `A: ${n / 2}, B: 2`;
 
+    let deadline = 1000
+  	let start = performance.now();
     let x = ~~(Math.sqrt(n));
     let y = 0;
     let count = 1; // iterations counter
@@ -30,6 +32,14 @@ export default function App() {
 
     return `A: ${x - y}, B: ${x + y}`;
   }
+  
+  if (factors == null){
+ 					alert ("deadline exposed")
+ 				}
+  
+  if (performance.now() - end > deadline) {
+ 			return {null, null}
+ 		}
 
   const [n, onChangeNumber] = useState(null);
   const [result, setResult] = useState(null);
